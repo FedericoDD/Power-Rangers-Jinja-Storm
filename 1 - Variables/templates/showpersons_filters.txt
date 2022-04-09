@@ -1,9 +1,28 @@
-People under 30 yo are:
-{% for person in persons %}
-    {% if person.age < 30 %}
-        {{- person['name'] }}
-    {% endif %}    
-{%- endfor %}
+Ninja under 30 yo are:
+    {% for person in persons %}
+        {% if person.age < 30 %}
+            {{- person.name }}
+        {% endif %}    
+    {%- endfor %}
 
 
-The sum of ages is {{ persons | sum(attribute='age') }}
+{# note: or
+    # for person in persons
+        {% if person.age < 30 %}
+            {{- person['name'] }}
+        {% endif %}    
+    #- endfor 
+#}
+
+
+{# note: or
+    {% for person in persons %}
+        {% if person.age < 30 %}
+            {{- person['name'] }}
+        {% endif %}    
+    {%- endfor %}
+#}
+
+
+    The sum of ages of all the ninjas is {{ persons | sum(attribute='age') }}
+

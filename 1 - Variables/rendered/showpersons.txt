@@ -1,6 +1,6 @@
-Andrea 34
+Andrea 28
 Matteo 20
-Lorenzo 20
-Federico 22
+Lorenzo 58
+Federico 88
 Emanuele 30
 Santa 54

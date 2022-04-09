@@ -1,4 +1,4 @@
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 """
 Jinja uses a central object called the template Environment.
@@ -10,7 +10,11 @@ class, an environment is created automatically for you,
 albeit a shared one.
 """
 
-env = Environment(loader=FileSystemLoader('1 - Variables/templates'))
+env = Environment(loader=FileSystemLoader('1 - Variables/templates'),
+        autoescape=select_autoescape(
+        enabled_extensions=('txt'),
+        default_for_string=True,)
+ )
 
 """
 To load a template from this environment, call the get_template()
@@ -19,10 +23,10 @@ The template is retrieved from the templates directory.
 """
 
 persons = [
-    {'name': 'Andrea', 'age': 34}, 
+    {'name': 'Andrea', 'age': 28}, 
     {'name': 'Matteo', 'age': 20}, 
-    {'name': 'Lorenzo', 'age': 20}, 
-    {'name': 'Federico', 'age': 22}, 
+    {'name': 'Lorenzo', 'age': 58}, 
+    {'name': 'Federico', 'age': 88}, 
     {'name': 'Emanuele', 'age': 30}, 
     {'name': 'Santa', 'age': 54}
 ]
@@ -39,7 +43,11 @@ or Environment.from_string() has multiple advantages. Besides being
 a lot easier to use it also enables template inheritance.
 """
 
+
+
 output = template.render(persons=persons)
+env.trim_blocks = False
+env.lstrip_blocks = False
 with open('1 - Variables/rendered/showpersons.txt', 'w') as res:
         res.write(output)
 
@@ -48,7 +56,6 @@ with open('1 - Variables/rendered/showpersons.txt', 'w') as res:
 ######################################################################
 
 template = env.get_template('showpersons_filters.txt')
-
 output = template.render(persons=persons)
 with open('1 - Variables/rendered/showpersons_filters.txt', 'w') as res:
         res.write(output)

@@ -1,14 +1,19 @@
 People under 30 yo are:
+    
+        Andrea
+        
+        Matteo
+        
+        
+        
+        
+        
 
-    
-    Matteo
-    
-    Lorenzo
-    
-    Federico
-    
-    
-    
 
 
-The sum of ages is 180
+
+
+
+
+
+    The sum of ages is 278
