@@ -1,6 +1,8 @@
-Andrea 28
-Matteo 20
-Lorenzo 58
-Federico 88
-Emanuele 30
-Santa 54
+Ninjas' names are:
+
+Andrea 
+Matteo 
+Lorenzo 
+Federico 
+Emanuele 
+Sergey 

@@ -23,12 +23,12 @@ The template is retrieved from the templates directory.
 """
 
 persons = [
-    {'name': 'Andrea', 'age': 28}, 
-    {'name': 'Matteo', 'age': 20}, 
-    {'name': 'Lorenzo', 'age': 58}, 
+    {'name': 'Andrea', 'age': 26}, 
+    {'name': 'Matteo', 'age': 90}, 
+    {'name': 'Lorenzo', 'age': 90}, 
     {'name': 'Federico', 'age': 88}, 
-    {'name': 'Emanuele', 'age': 30}, 
-    {'name': 'Santa', 'age': 54}
+    {'name': 'Emanuele', 'age': 29}, 
+    {'name': 'Sergey', 'age': 38}
 ]
 
 template = env.get_template('showpersons.txt')
@@ -42,8 +42,6 @@ Using a template loader rather than passing strings to Template
 or Environment.from_string() has multiple advantages. Besides being 
 a lot easier to use it also enables template inheritance.
 """
-
-
 
 output = template.render(persons=persons)
 env.trim_blocks = False

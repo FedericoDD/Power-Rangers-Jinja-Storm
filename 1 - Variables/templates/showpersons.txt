@@ -1,4 +1,5 @@
-Ninjas' names are
+Ninjas' names are:
+
 {% for person in persons -%}
-    {{ person.name }} {{ person.age }}
+      {{person.name}} 
 {% endfor %}

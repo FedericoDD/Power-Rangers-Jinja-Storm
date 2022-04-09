@@ -1,19 +1,14 @@
-People under 30 yo are:
+Ninjas under 40 yo are:
     
-        Andrea
-        
-        Matteo
+        Andrea                                       26                                       
         
         
         
         
+        Emanuele                                       29                                       
+        
+        Sergey                                       38                                       
         
 
 
-
-
-
-
-
-
-    The sum of ages is 278
+    The sum of ages of all the ninjas is 361
