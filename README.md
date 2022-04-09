@@ -1,5 +1,10 @@
 # Power-Rangers-Jinja-Storm
 
+This repository is organized in five levers, to help everyone to understand how to use Jinja, from a young ninja (Jenin) to a master ninja (Jonin).
+
+**Jenin** \
+This repository shows simple esamples to better understand how to use basic command with Jinja.
+
 
 **Variables** \
 Template variables are defined by the context dictionary passed to the template.
@@ -19,8 +24,10 @@ Jinja allows basic expressions everywhere. These work very similarly to regular 
 
 
 
-**Documentation**
+**Thanks to**
 
 - https://it.wikipedia.org/wiki/Jinja2
 
 - https://jinja.palletsprojects.com/en/3.1.x/
+
+- https://zetcode.com/python/jinja/

@@ -1,0 +1,9 @@
+People under 30 yo are:
+{% for person in persons %}
+    {% if person.age < 30 %}
+        {{- person['name'] }}
+    {% endif %}    
+{%- endfor %}
+
+
+The sum of ages is {{ persons | sum(attribute='age') }}
