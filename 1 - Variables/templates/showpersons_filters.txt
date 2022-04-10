@@ -1,22 +1,27 @@
-Ninjas under 40 yo are:
-    {% for person in persons %}
-        {% if person.age < 40 %}
-            {{- person.name}}{{person.age|center}}
-        {% endif %}    
+The most dangerous ninjas are:
+
+    {%- for person in persons %}
+    {# '-' denotes that the preceding white spaces are to be discarded #}
+        {%- if person.missions>100 %}
+            {{person.name|center}} {{'\n'}}
+            {{"Number of missions: %s"|center % person.missions }}
+        {%- endif %}    
     {%- endfor %}
+
+
 {# note: or
     # for person in persons
-        {% if person.age < 40 %}
+        {% if person.missions < 40 %}
             {{- person['name'] }}
         {% endif %}    
     #- endfor 
 #}
 {# note: or
     {% for person in persons %}
-        {% if person.age < 40 %}
+        {% if person.missions < 40 %}
             {{- person['name'] }}
         {% endif %}    
     {%- endfor %}
 #}
-    The sum of all ninjas' ages is {{ persons | sum(attribute='age') }}
+    The sum of all ninjas' missions is {{ persons | sum(attribute='missions') }}
 

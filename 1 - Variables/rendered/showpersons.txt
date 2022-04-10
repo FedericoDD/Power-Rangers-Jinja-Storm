@@ -1,8 +1,14 @@
 Ninjas' names are:
 
 Andrea 
+      Konnichiwa, Andrea!
 Matteo 
+      Konnichiwa, Matteo!
 Lorenzo 
-Federico 
+      Konnichiwa, Lorenzo!
 Emanuele 
+      Konnichiwa, Emanuele!
 Sergey 
+      Konnichiwa, Sergey!
+Federico 
+      Konnichiwa, Federico!

@@ -1,14 +1,21 @@
-Ninjas under 40 yo are:
+The most dangerous ninjas are:
     
-        Andrea                                       26                                       
-        
-        
-        
-        
-        Emanuele                                       29                                       
-        
-        Sergey                                       38                                       
-        
+                                                 Andrea                                      
+
+                                         Number of missions: 151                             
+    
+    
+    
+                                                Emanuele                                     
+
+                                         Number of missions: 151                             
+    
+                                                 Sergey                                      
+
+                                         Number of missions: 138                             
+    
 
 
-    The sum of ages of all the ninjas is 361
+
+
+    The sum of all ninjas' missions is 708

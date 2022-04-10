@@ -23,12 +23,12 @@ The template is retrieved from the templates directory.
 """
 
 persons = [
-    {'name': 'Andrea', 'age': 26}, 
-    {'name': 'Matteo', 'age': 90}, 
-    {'name': 'Lorenzo', 'age': 90}, 
-    {'name': 'Federico', 'age': 88}, 
-    {'name': 'Emanuele', 'age': 29}, 
-    {'name': 'Sergey', 'age': 38}
+    {'name': 'Andrea', 'missions': 151}, 
+    {'name': 'Matteo', 'missions': 90}, 
+    {'name': 'Lorenzo', 'missions': 90}, 
+    {'name': 'Emanuele', 'missions': 151}, 
+    {'name': 'Sergey', 'missions': 138},
+    {'name': 'Federico', 'missions': 88}
 ]
 
 template = env.get_template('showpersons.txt')

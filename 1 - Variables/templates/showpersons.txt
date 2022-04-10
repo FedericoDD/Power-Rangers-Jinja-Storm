@@ -2,4 +2,5 @@ Ninjas' names are:
 
 {% for person in persons -%}
       {{person.name}} 
+      {{ "Konnichiwa, %s!" % person.name }}
 {% endfor %}
