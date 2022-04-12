@@ -16,6 +16,7 @@ The most dangerous ninjas are:
         {% endif %}    
     #- endfor 
 #}
+
 {# note: or
     {% for person in persons %}
         {% if person.missions < 40 %}

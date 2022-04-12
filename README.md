@@ -1,6 +1,6 @@
 # Power-Rangers-Jinja-Storm
 
-This repository is organized in five levels, to help everyone to understand how to use Jinja, from a young ninja (Jenin) to a master ninja (Jonin).
+This repository is organized in seven levels, to help everyone to understand how to use Jinja, from a young ninja (Jenin) to a master ninja (Jonin).
 
 **0 - Jenin** \
 This repository shows simple esamples to better understand how to use basic commands with Jinja.
@@ -17,7 +17,6 @@ You can mess around with the variables in templates provided, they are passed in
 A control structure refers to all those things that control the flow of a program - conditionals (i.e. if/elif/else), for-loops, as well as things like macros and blocks. With the default syntax, control structures appear inside {% ... %} blocks.
 
 
-
 **3 - Expressions**\
 {{ ... }} for Expressions to print to the template output
 Jinja allows basic expressions everywhere. Theese work very similarly to regular Python; even if you’re not working with Python you should feel comfortable with it.
@@ -25,7 +24,10 @@ Jinja allows basic expressions everywhere. Theese work very similarly to regular
 **4 - Macros**
 
 
+**5 - Custom filter**
 
+
+**6 - Master**
 
 
 **Thanks to**

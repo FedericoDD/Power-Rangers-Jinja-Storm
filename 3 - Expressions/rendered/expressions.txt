@@ -1,0 +1,66 @@
+
+   Andrea 151 
+   Matteo 90 
+   Lorenzo 90 
+   Emanuele 151 
+   Sergey 138 
+   Federico 88 
+
+
+
+    Ninjas' names are:
+
+
+    
+
+
+    Andrea 
+
+
+          Konnichiwa, Andrea!
+
+
+    Matteo 
+
+
+          Konnichiwa, Matteo!
+
+
+    Lorenzo 
+
+
+          Konnichiwa, Lorenzo!
+
+
+    Emanuele 
+
+
+          Konnichiwa, Emanuele!
+
+
+    Sergey 
+
+
+          Konnichiwa, Sergey!
+
+
+    Federico 
+
+
+          Konnichiwa, Federico!
+
+
+
+
+
+
+ a  b c
+
+
+
+
+
+6
+
+
+43
