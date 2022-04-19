@@ -1,7 +1,7 @@
 The most dangerous ninjas are:
 
     {%- for person in persons %}
-    {# '-' denotes that the preceding white spaces are to be discarded #}
+    {#- '-' denotes that the preceding white spaces are to be discarded #}
         {%- if person.missions>100 %}
             {{person.name|center}} {{'\n'}}
             {{"Number of missions: %s"|center % person.missions }}

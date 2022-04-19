@@ -1,23 +1,23 @@
+The most dangerous ninjas are:
 
 {% for person in persons -%}
-    {{"   %s %d "|format(person.name, person.missions) }}
-{% endfor %}
+{%- if person.missions>100 %}
+    {{"%s \n Number of missions: %d \n "|format(person.name, person.missions) }}
+{%- endif %}
+{%- endfor %}
 
-{% for line in file%}
-    {{line}}
-{% endfor %}
+{# Here you can read a file #}
+{%- for line in file%}
+    {{-line}}
+{%- endfor %}
 
-{% set newline=" a " %}
-{% set newline = "%s b"|format(newline) %}
-{% set newline = "%s c"|format(newline) %}
-{{newline}}
+{%- set line %}
+    {%- set ninja_num=persons|count %}
+    {%- set sum_missions=persons | sum(attribute='missions')%}
+    They are {{ninja_num}} ninjas!
+    Every ninja has done about {{ (sum_missions/ninja_num) |round(0,'ceil')|int }} missions.
+{%- endset %}
 
-{% set vect=[1,2,3,4,5,6] %}
-{% set length=vect|length %}
+{{line}}
 
-{% if vect|length > 1 %}
-{{ length }}
-{% endif %}
-
-{{ 42.55321|round(0,'ceil')|int }}
 

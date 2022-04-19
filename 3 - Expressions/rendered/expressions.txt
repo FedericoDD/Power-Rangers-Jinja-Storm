@@ -1,66 +1,33 @@
-
-   Andrea 151 
-   Matteo 90 
-   Lorenzo 90 
-   Emanuele 151 
-   Sergey 138 
-   Federico 88 
-
-
-
-    Ninjas' names are:
-
-
-    
+The most dangerous ninjas are:
 
 
     Andrea 
-
-
-          Konnichiwa, Andrea!
-
-
-    Matteo 
-
-
-          Konnichiwa, Matteo!
-
-
-    Lorenzo 
-
-
-          Konnichiwa, Lorenzo!
-
-
+ Number of missions: 151 
+ 
     Emanuele 
-
-
-          Konnichiwa, Emanuele!
-
-
+ Number of missions: 151 
+ 
     Sergey 
+ Number of missions: 138 
+ 
+
+Ninjas' names are:
+
+Andrea 
+      Konnichiwa, Andrea!
+Matteo 
+      Konnichiwa, Matteo!
+Lorenzo 
+      Konnichiwa, Lorenzo!
+Emanuele 
+      Konnichiwa, Emanuele!
+Sergey 
+      Konnichiwa, Sergey!
+Federico 
+      Konnichiwa, Federico!
 
 
-          Konnichiwa, Sergey!
 
+    They are 6 ninjas!
+    Every ninja has done about 118 missions.
 
-    Federico 
-
-
-          Konnichiwa, Federico!
-
-
-
-
-
-
- a  b c
-
-
-
-
-
-6
-
-
-43
