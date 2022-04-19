@@ -1,5 +1,16 @@
-{% macro uzulele(a,b) %}
+{%- macro lunch(person,items) %}
+{%- set cost_sum = 0  %}
+The ninja named {{person.name}} has {{person.missions * 25220}} koban.
+He can buy: 
+    {%- for item in items %}
+        {%- set cost_sum = cost_sum + item.cost  %}
+        {%- if (cost_sum ) < (person.missions * 25220) %}
+         - {{ item.name }}
+        {%- endif %}
+    {%- endfor %}
+    {{"\n"}}
+{%- endmacro %}
 
-{% endmacro %}
-
-{{ uzulele(a,b) }}
+{%- for person in persons %}
+    {{- lunch(person,items) }}
+{%- endfor %}

@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
-
+import statistics
 
 env = Environment(loader=FileSystemLoader('5 - Custom filters/templates'))
 
@@ -20,6 +20,7 @@ def up1(val):
 
 
 env.filters["up1"] = up1
+env.filters["mean"] = statistics.mean
 
 def statements(persons):
     
