@@ -1,5 +1,9 @@
 from jinja2 import Environment, FileSystemLoader
 
+"""
+Here you can see how to use a loop ( {% for [...] %} [...] {% endfor %} )
+and conditionals ( {if [...]} do this {% elseif [...] %} do this {% else %} do this {% endif %} )
+"""
 
 env = Environment(loader=FileSystemLoader('2 - Statements/templates'))
 
@@ -25,13 +29,12 @@ foods = [
 
 statements(foods)
 
-########################################################################
-######################### I N E R I T ##################################
-########################################################################
-
-# base template: base.html
-# child template: about.html
+"""
+Here you can use {% set line %} [...] {% endset %} to create the same file. 
+Also you can create a base template (base.html) and a child template (about.html) to 
+create a nested template.
+"""
 template = env.get_template('about.html')
-output = template.render()
+output = template.render(foods=foods)
 with open('2 - Statements/rendered/about.html', 'w') as res:
         res.write(output)

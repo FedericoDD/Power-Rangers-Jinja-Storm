@@ -6,11 +6,30 @@
     <do something> if <something is true> else <do something else>. 
 #}
 
-{% block title%}About page{% endblock %}
+{% block title%}Ninja's food{% endblock %}
 
 {% block content %}
-<h1>About page</h1>
-<p>
-    This is about page
-</p>
-{% endblock %}
+    <h1>Ninja's favourite foods are:</h1>
+{%- set line %}
+    <ul>
+    {%- for food in foods %}
+            <li>{{food.name|center}}</li>
+    {%- endfor %}
+    </ul>
+    <p>Ninjas need energy:</p>
+    <ul>
+    {% for food in foods %}
+        <li> {{ food.name}}{{" => " ~ food.kcal ~ "kcal"}} 
+            {% if food.kcal>200 %}
+               <br /> Full of energy!
+            {% elif not food.kcal>100 %}
+                <br /> Not enought energy... :(
+            {% else %}
+                <br />Not bad!
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{%- endset %}
+{{line}}
+{%- endblock %}
