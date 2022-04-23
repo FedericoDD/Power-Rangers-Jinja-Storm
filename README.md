@@ -22,13 +22,13 @@ A control structure refers to all those things that control the flow of a progra
 Jinja allows basic expressions everywhere. Theese work very similarly to regular Python; even if you’re not working with Python you should feel comfortable with it.
 
 **4 - Macros**
-
+Macros are function-link elements.
 
 **5 - Custom filter**
+You can create new filters yourself!
 
-
-**6 - Master**
-
+**6 - Jonin**
+Now you're a Jinja Ninja!
 
 **Thanks to**
 
