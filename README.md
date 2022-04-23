@@ -30,7 +30,7 @@ You can create new filters yourself!
 **6 - Jonin**\
 Now you're a Jinja Ninja!
 
-**Thanks to**\
+**Thanks to**
 
 - https://it.wikipedia.org/wiki/Jinja2
 
