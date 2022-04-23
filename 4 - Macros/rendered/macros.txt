@@ -1,14 +1,3 @@
-The most dangerous ninjas are:
-    Andrea 
- Number of missions: 151 
- 
-    Emanuele 
- Number of missions: 151 
- 
-    Sergey 
- Number of missions: 138 
- 
-
 
 The ninja named Andrea has 3808220 koban.
 He can buy:
@@ -72,8 +61,3 @@ He can buy:
          - Ninjato
          - Smoke bombs
     
-
-
-    They are 6 ninjas!
-    Every ninja has done about 118 missions.
-    They do one mission a week, so next week they'll have done about 119 missions.

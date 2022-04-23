@@ -1,5 +1,0 @@
-{% macro uzulele(a,b) %}
-
-{% endmacro %}
-
-{{ uzulele(a,b) }}

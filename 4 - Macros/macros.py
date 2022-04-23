@@ -12,13 +12,24 @@ persons = [
     {'name': 'Federico', 'missions': 88}
 ]
 
+items = [
+    {'name': 'Back jacket', 'cost': 9769}, 
+    {'name': 'Black trousers', 'cost': 8898}, 
+    {'name': 'Light sandals', 'cost': 10374}, 
+    {'name': 'Hooded cowl', 'cost': 5347}, 
+    {'name': 'Ninjato', 'cost': 88475}, 
+    {'name': 'Ninja sword', 'cost': 6319658},
+    {'name': 'Smoke bombs', 'cost': 10111},
+    {'name': 'New katana', 'cost': 2527863}, 
+]
 
 
-def statements(persons):
+def statements(persons,items):
     
     template = env.get_template('macros.txt')
 
-    output = template.render(persons=persons)
+    output = template.render(persons=persons,items=items)
     with open('4 - Macros/rendered/macros.txt', 'w') as res:
         res.write(output)
 
+statements(persons,items)

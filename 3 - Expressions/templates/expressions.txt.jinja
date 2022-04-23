@@ -1,0 +1,23 @@
+The most dangerous ninjas are:
+
+{% for person in persons -%}
+{%- if person.missions>100 %}
+    {{"%s \n Number of missions: %d \n "|format(person.name, person.missions) }}
+{%- endif %}
+{%- endfor %}
+
+{# Here you can read a file #}
+{%- for line in file%}
+    {{-line}}
+{%- endfor %}
+
+{%- set line %}
+    {%- set ninja_num=persons|count %}
+    {%- set sum_missions=persons | sum(attribute='missions')%}
+    They are {{ninja_num}} ninjas!
+    Every ninja has done about {{ (sum_missions/ninja_num) |round(0,'ceil')|int }} missions.
+{%- endset %}
+
+{{line}}
+
+

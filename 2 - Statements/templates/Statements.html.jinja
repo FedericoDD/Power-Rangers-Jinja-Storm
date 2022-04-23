@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>First Page</title>
+    <title>Ninja's food</title>
 </head>
 <body>
-    <h1>Ninja's food</h1>
-    
-    <p>Ninja's favourite foods are:</p>
+    <h1>Ninja's favourite foods are:</h1>
     <ul>
 	{% for food in foods %}
         <li>{{ food.name|center }}</li>
     {% endfor %}
     </ul>
     
-    <p>He needs energy:</p>
+    <p>Ninjas need energy:</p>
     <ul>
     {% for food in foods %}
         <li> {{ food.name}}{{" => " ~ food.kcal ~ "kcal"}} 
