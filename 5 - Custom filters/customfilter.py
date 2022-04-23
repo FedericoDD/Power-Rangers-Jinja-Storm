@@ -1,5 +1,4 @@
 from jinja2 import Environment, FileSystemLoader
-import statistics
 
 env = Environment(loader=FileSystemLoader('5 - Custom filters/templates'))
 
@@ -18,16 +17,33 @@ def up1(val):
     val=val+1
     return val
 
+def average(sum_var,num): 
+    """
+    sum_var = sum of elements
+    num = number of elements
+    """
+    try:
+        avg = sum_var / num
+    except ZeroDivisionError:
+        avg='NaN'
+    return avg
 
 env.filters["up1"] = up1
-env.filters["mean"] = statistics.mean
+env.globals["average"] = average
 
-def statements(persons):
+file=open('4 - Macros/rendered/macros.txt','r')
+
+
+# S T R E A M
+def statements(persons,file):
+
+    template = env.get_template('customfilter.txt.jinja')
     
-    template = env.get_template('customfilter.txt')
+    """
+    You can use stream instead of render and dump insteas of "with open..."
+    to use memory in a more efficiency way.
+    """
+    
+    output = template.stream(persons=persons,file=file).dump('5 - Custom filters/rendered/customfilter.txt')
 
-    output = template.render(persons=persons)
-    with open('5 - Custom filters/rendered/customfilter.txt', 'w') as res:
-        res.write(output)
-
-statements(persons)
+statements(persons,file)

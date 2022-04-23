@@ -1,2 +1,79 @@
-43
-44
+The most dangerous ninjas are:
+    Andrea 
+ Number of missions: 151 
+ 
+    Emanuele 
+ Number of missions: 151 
+ 
+    Sergey 
+ Number of missions: 138 
+ 
+
+
+The ninja named Andrea has 3808220 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+         - New katana
+    
+
+The ninja named Matteo has 2269800 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+    
+
+The ninja named Lorenzo has 2269800 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+    
+
+The ninja named Emanuele has 3808220 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+         - New katana
+    
+
+The ninja named Sergey has 3480360 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+         - New katana
+    
+
+The ninja named Federico has 2219360 koban.
+He can buy:
+         - Back jacket
+         - Black trousers
+         - Light sandals
+         - Hooded cowl
+         - Ninjato
+         - Smoke bombs
+    
+
+
+    They are 6 ninjas!
+    Every ninja has done about 118 missions.
+    They do one mission a week, so next week they'll have done about 119 missions.
